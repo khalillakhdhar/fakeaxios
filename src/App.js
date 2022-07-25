@@ -6,7 +6,7 @@ const [data, setData] = useState(null);
 const [fetchData, setFetch] = useState(false);
 useEffect(() => {
   if (fetchData) {
-  axios.get('https://jsonplaceholder.typicode.com/todos/1')
+  axios.get('https://jsonplaceholder.typicode.com/todos/2')
   .then((res) => setData(res.data.title));
   }
   }, [fetchData]);
